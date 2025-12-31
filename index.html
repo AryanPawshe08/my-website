@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Small Apology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #e8f0ff, #f9f9f9);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      background: white;
+      padding: 25px;
+      max-width: 360px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: fade 1.2s ease;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #4a6cff;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #354edb;
+    }
+
+    .extra {
+      display: none;
+      margin-top: 15px;
+      color: #444;
+      font-size: 14px;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>Just an Apology</h2>
+
+    <p>
+      I know I may have crossed a line or hurt you,  
+      and I’m genuinely sorry for that.
+    </p>
+
+    <p>
+      This isn’t to force a conversation  
+      or make things uncomfortable.
+    </p>
+
+    <button onclick="showText()">Read more</button>
+
+    <div class="extra">
+      I only wanted to acknowledge my mistake.  
+      I respect your space and your decision.  
+      I hope things get better for you 🌿
+    </div>
+  </div>
+
+  <script>
+    function showText() {
+      document.querySelector(".extra").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
